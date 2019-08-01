@@ -1,0 +1,40 @@
+{
+	"name": "--app-name--",
+	"version": "0.1.0",
+	"description": "example of usage for nextjs-dynamic-routes",
+	"main": "server.js",
+	"repository": {},
+	"author": "Antoine HAREL",
+	"license": "MIT",
+	"scripts": {
+		"dev": "node server.js",
+		"build": "next build",
+		"start": "NODE_ENV=production node server.js",
+		"dock-build": "docker build -t antoineharel/--app-name-- .",
+		"dock-run": "docker run -d -p 3000:3000 antoineharel/--app-name--"
+	},
+	"dependencies": {
+		"@zeit/next-css": "^1.0.1",
+		"@zeit/next-sass": "^1.0.1",
+		"axios": "^0.19.0",
+		"express": "^4.16.4",
+		"file-loader": "^4.0.0",
+		"isomorphic-fetch": "^2.2.1",
+		"next": "^8.0.4",
+		"next-assets-import": "^0.0.2",
+		"nextjs-dynamic-routes": "^2.1.9",
+		"react": "^16.5.2",
+		"react-dom": "^16.5.2",
+		"react-redux": "^7.1.0",
+		"redux": "^4.0.4",
+		"redux-devtools-extension": "^2.13.8",
+		"redux-thunk": "^2.3.0",
+		"semantic-ui-css": "^2.4.1",
+		"semantic-ui-react": "^0.87.3",
+		"universal-cookie": "^4.0.2",
+		"url-loader": "^2.0.1"
+	},
+	"engines": {
+		"node": ">=7.5"
+	}
+}

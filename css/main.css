@@ -1,0 +1,8 @@
+div.pageContent {
+	margin-top: 100px !important;
+}
+
+div.fixed.menu {
+	box-shadow: none !important;
+	height: 60px !important;
+}
