@@ -1,7 +1,5 @@
 const Router = require('nextjs-dynamic-routes');
 
-//========================== ROUTES ============================
-
 const routes = [
 	{
 		name: 'home',
@@ -13,9 +11,6 @@ const routes = [
 	}
 ];
 
-//===============================================================
-
 const router = new Router();
-
 for (var i = 0; i < routes.length; i++) router.add(routes[i]);
 module.exports = router;

@@ -9,5 +9,3 @@ let composeEnhancers = composeWithDevTools({ trace: true, traceLimit: 25 });
 export const initializeStore = (initialState = { auth: authDefaultStore }) => {
 	return createStore(combineReducers({ auth: authReducer }), initialState, composeEnhancers(applyMiddleware(thunk)));
 };
-
-// export default store;
